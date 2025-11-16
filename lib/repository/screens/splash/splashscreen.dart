@@ -1,3 +1,5 @@
+import 'package:blinkit/domain/constants/appcolors.dart';
+import 'package:blinkit/repository/widgets/uihelper.dart';
 import 'package:flutter/material.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -8,6 +10,15 @@ class SplashScreen extends StatefulWidget {
 class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      backgroundColor: AppColors.scaffoldbackground,
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+          Uihelper.Custommage(img: "image1.png"),
+        ]),
+      )
+    );
   }
 }
